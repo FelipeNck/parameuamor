@@ -5,7 +5,7 @@ function move() {
     let vert = Math.floor(Math.random() * 300);
     let dif = positions[0] - vert;
     if (dif < 0){dif *= -1;}
-    if (dif < 50){vert += 50;}
+    if (dif < 50){vert += 30;}
     if (Math.floor(Math.random() * 2) == 0){vert = vert*-1;}
     let hori = Math.floor(Math.random() * 100);
     dif = positions[1] - hori;
