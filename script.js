@@ -2,11 +2,14 @@ let no = document.querySelector("#no");
 let positions = [0,0];
 
 function move() {
-    let vert = Math.floor(Math.random() * 300);
-    let dif = positions[0] - vert;
-    if (dif < 0){dif *= -1;}
-    if (dif < 50){vert += 30;}
-    if (Math.floor(Math.random() * 2) == 0){vert = vert*-1;}
+    let vert = 0;
+    while (vert > -267){
+        vert = Math.floor(Math.random() * 300);
+        let dif = positions[0] - vert;
+        if (dif < 0){dif *= -1;}
+        if (dif < 50){vert += 30;}
+        if (Math.floor(Math.random() * 2) == 0){vert = vert*-1;}
+    }
     let hori = Math.floor(Math.random() * 100);
     dif = positions[1] - hori;
     if (dif < 0){dif *= -1;}
