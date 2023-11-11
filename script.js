@@ -2,8 +2,8 @@ let no = document.querySelector("#no");
 let positions = [0,0];
 
 function move() {
-    let vert = 0;
-    while (vert > -267){
+    let vert = -268;
+    while (vert < -267){
         vert = Math.floor(Math.random() * 300);
         let dif = positions[0] - vert;
         if (dif < 0){dif *= -1;}
